@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rzxrsd.yz.activities.ChatActivity"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:id="@+id/relative">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary" />
+    <cn.jiguang.imui.chatinput.ChatInputView
+        android:id="@+id/chat_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cameraBtnIcon="@drawable/aurora_menuitem_camera"
+        app:inputCursorDrawable="@drawable/aurora_edittext_cursor_bg"
+        app:inputEditTextBg="@drawable/aurora_edittext_bg"
+        app:inputHint=""
+        app:photoBtnIcon="@drawable/aurora_menuitem_photo"
+        app:sendBtnIcon="@drawable/aurora_menuitem_send"
+        app:sendBtnPressedIcon="@drawable/aurora_menuitem_send_pres"
+        app:voiceBtnIcon="@drawable/aurora_menuitem_mic" />
+    <cn.jiguang.imui.messages.MessageList
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/chat_input"
+        android:id="@+id/msg_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:avatarHeight="50dp"
+        app:avatarWidth="50dp"
+        app:bubbleMaxWidth="0.70"
+        app:dateTextSize="14sp"
+        app:receiveBubblePaddingLeft="20dp"
+        app:receiveBubblePaddingRight="10dp"
+        app:receiveTextColor="#ffffff"
+        app:receiveTextSize="18sp"
+        app:sendBubblePaddingLeft="10dp"
+        app:sendBubblePaddingRight="20dp"
+        app:sendTextColor="#7587A8"
+        app:sendTextSize="18sp"
+        android:background="@android:color/white"/>
+
+</RelativeLayout>

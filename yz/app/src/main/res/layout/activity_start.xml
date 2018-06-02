@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.StartActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+        <Button android:id="@+id/login"
+            android:text="手机号登录"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/b_yellow_r"
+            android:layout_margin="8dp"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录即代表同意"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:id="@+id/a"
+                android:layout_toRightOf="@+id/t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户协议"
+                android:gravity="center"
+                android:textColor="@android:color/holo_blue_bright" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
